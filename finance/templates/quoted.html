@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead class="table-head" >
+            <td scope="col">Symbol</td>
+            <td scope="col">Company Name</td>
+            <td scope="col">Latest Price</td>
+        </thead>
+        <tr>
+            <td>{{ quote["symbol"] }}</td>
+            <td>{{ quote["name"] }}</td>
+            <td>{{ quote["price"] }}</td>
+        </tr>
+    </table>
+
+{% endblock %}

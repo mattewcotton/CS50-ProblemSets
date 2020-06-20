@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Hsitory
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead class="table-head" >
+            <td scope="col">Date & Time</td>
+            <td scope="col">Buy/Sell</td>
+            <td scope="col">Symbol</td>
+            <td scope="col">Company Name</td>
+            <td scope="col">Purchase/Sale Price Per Share</td>
+            <td scope="col">Number of Shares</td>
+        </thead>
+            {% for row in history %}
+                <tr>
+                    <td>{{ row["datestamp"] }}</td>
+                    <td>{{ row["buy_sell"] }}</td>
+                    <td>{{ row["symbol"] }}</td>
+                    <td>{{ row["company_name"] }}</td>
+                    <td>{{ row["purchase_price_per_share"] }}</td>
+                    <td>{{ row["shares"] }}</td>
+                </tr>
+            {% endfor %}
+    </table>
+
+{% endblock %}

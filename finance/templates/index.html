@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead class="table-head" >
+            <td scope="col">Symbol</td>
+            <td scope="col">Company Name</td>
+            <td scope="col">Latest Price Per Share</td>
+            <td scope="col">Number of Shares</td>
+            <td scope="col">Total Value</td>
+        </thead>
+            {% for row in stocks %}
+                <tr>
+                    <td>{{ row["symbol"] }}</td>
+                    <td>{{ row["company_name"] }}</td>
+                    <td>{{ row["price"] }}</td>
+                    <td>{{ row["shares"] }}</td>
+                    <td>{{ row["total"] }}</td>
+                </tr>
+            {% endfor %}
+        <tr>
+            <td>Cash</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{ cash }}</td>
+        </tr>
+        <tr class="table-head">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{ overall_total }}</td>
+        </tr>
+    </table>
+
+{% endblock %}

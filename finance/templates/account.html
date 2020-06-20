@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Account
+{% endblock %}
+
+{% block main %}
+    <p>Username: {{ username }}</p>
+    <p></p>
+    <p>Cash: {{ cash }}</p>
+    <form action="/account" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="add_cash" placeholder="$100" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Add Cash</button>
+    </form>
+    <p></p>
+    <p>Change Password</p>
+    <form action="/account" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="current_pwd" placeholder="Current Password" type="password">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="new_pwd" placeholder="New Password" type="password">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="confirm_pwd" placeholder="New Password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Change Password</button>
+    </form>
+{% endblock %}
