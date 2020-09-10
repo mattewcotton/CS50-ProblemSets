@@ -8,5 +8,4 @@ int main(void)
     string name = get_string("What is your name?\n");
     //Print hello with users name
     printf("Hello, %s\n", name);
-    printf("Hello again\n");
 }
