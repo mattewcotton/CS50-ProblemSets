@@ -3,7 +3,7 @@ This repo contains all submitted code for the Harvard CS50 problems sets.
 See https://cs50.harvard.edu/x/2020/ for more information on the problems sets.
 
 # About CS50x
-CS50x is an introduction to computer science and programming which is run online by Harvard. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, and software engineering. Languages include C, Python, and SQL plus students’ choice of: HTML, CSS, and JavaScript (for web development); ~~Java or Swift (for mobile app development); or Lua (for game development). ~~
+CS50x is an introduction to computer science and programming which is run online by Harvard. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, and software engineering. Languages include C, Python, and SQL plus students’ choice of: HTML, CSS, and JavaScript (for web development); ~~Java or Swift (for mobile app development); or Lua (for game development).~~
 
 ## Problem Set 0 (pset0)
 **Scratch Task:** To implement a Scrath "adventure".
