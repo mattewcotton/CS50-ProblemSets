@@ -97,4 +97,10 @@ See https://cs50.harvard.edu/x/2020/ for more information on the problems sets.
 
 
 ## Problem Set 8 (pset8)
+**Homepage Task:** Build a simple homepage using HTML, CSS, and JavaScript.
 
+**Results:** See homepage folder.
+
+**C$50 Finance Task:** Implement a website via which users can “buy” and “sell” stocks, a la the below.
+
+**Result:** See finance folder. 
